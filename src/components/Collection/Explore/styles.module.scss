@@ -1,0 +1,59 @@
+@import "../../../styles/mixins.scss";
+.wrapper {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 40px;
+  align-items: center;
+  margin-top: 40px;
+  @include mobile {
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    padding: 0 20px;
+    display: none;
+  }
+}
+.title {
+  flex: 1;
+  color: #344054;
+  font-family: var(--font-primary);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; /* 116.667% */
+  letter-spacing: -0.72px;
+  min-width: 300px;
+  span {
+    color: #54457F;
+  }
+}
+.imageList {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  flex-wrap: wrap;
+  @include mobile {
+    gap: 10px;
+    img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      border-radius: 4px;
+    }
+  }
+  .brandName {
+    color: #08415c;
+    font-family: var(--font-primary);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal; /* 112.5% */
+    letter-spacing: normal;
+  }
+  .verticalDivider {
+    height: 15px;
+    width: 2px;
+    background-color: #08415c;
+  }
+}

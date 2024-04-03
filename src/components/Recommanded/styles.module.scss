@@ -1,0 +1,131 @@
+@import "../../styles/mixins.scss";
+.wrapper{
+  padding: 40px;
+}
+.list{
+  display: flex;
+  gap: 10px;
+  max-width: 600px;
+}
+.card{
+  flex: 1;
+
+}
+.heading{
+  color: #344054;
+  font-family: var(--font-primary);
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px; /* 112.5% */
+  letter-spacing: -0.96px;
+  margin-bottom: 32px;
+}
+.title{
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #344054;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  height: 40px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.productImage{
+  width: 194px;
+  height: 150px;
+  object-fit: cover;
+}
+.options {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  @include mobile {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .block {
+    display: flex;
+    align-items: center;
+    color: #344054;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; /* 128.571% */
+    text-transform: capitalize;
+    gap: 4px;
+    label {
+      color: #667085;
+    }
+    .colorOptions{
+      display: flex;
+      gap: 2px;
+    }
+    .color {
+      width: 18px;
+      height: 19px;
+      border-radius: 100%;
+      border: 2px solid #98a2b3;
+      padding: 2px;
+      .circle {
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+.amount {
+  display: flex;
+  gap: 10px;
+  color: #344054;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 125% */
+  margin-top: 10px;
+  @include mobile {
+    order: 3;
+  }
+}
+
+.discountTag {
+  order: 2;
+  border-radius: 2px;
+  background: #cc2b2b;
+  color: #fff;
+  //leading-trim: both;
+  //text-edge: cap;
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 7.904px; /* 98.802% */
+  padding: 2px 4px;
+  display: flex;
+  align-items: center;
+}
+.mobileCart {
+  margin-top: 10px;
+    .card {
+      border-radius: 4px;
+      border: 1px solid #000;
+      background: transparent;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      justify-content: center;
+      gap: 10px;
+    }
+
+
+}

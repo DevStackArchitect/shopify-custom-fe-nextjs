@@ -1,0 +1,107 @@
+@import "../../styles/mixins.scss";
+
+.wrapper {
+  position: relative;
+  background: #54457F;
+  padding: 10px 0;
+  z-index: 10;
+  @include mobile {
+    display: none;
+  }
+
+  .listContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    .navItem {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #fff;
+      font-family: var(--font-primary);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px; // 128.571%
+      cursor: pointer;
+    }
+  }
+}
+.menuWrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30px;
+  z-index: 1;
+  background: #fff;
+  box-shadow:
+    2px -3px 4px -2px rgba(16, 24, 40, 0.06),
+    -2px 4px 12px 0px rgba(16, 24, 40, 0.05);
+  opacity: 0;
+  transform: translateY(-200%);
+  transition: all 0.3s ease-in-out;
+  &.open {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.subMenuWrapper {
+  display: flex;
+  width: 100%;
+  padding: 40px 0;
+}
+.submenuPanel {
+  columns: 4;
+  flex: 1 1 81%;
+  //display: flex;
+  //justify-content: space-between;
+  //background: #fff; // assuming white background for the submenu panel
+  //padding: 20px;
+  //position: absolute;
+  //left: 0;
+  //right: 0;
+  //top: 100%;
+  //z-index: 10; // make sure it's above other content
+  //box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submenuColumn {
+  padding: 0 40px 15px 0;
+  page-break-inside: avoid;
+}
+
+.submenuTitle {
+  color: #344054;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 125% */
+  cursor: pointer;
+}
+
+.submenuList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.submenuItem {
+  margin: 10px 0;
+  color: #667085;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 128.571% */
+  cursor: pointer;
+
+  a {
+    color: #666; // or any color that suits your design
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

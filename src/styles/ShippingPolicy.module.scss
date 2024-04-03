@@ -1,0 +1,91 @@
+@import "../styles/mixins.scss";
+
+.wrapper {
+  background: #f9fafb;
+  padding: 90px 0;
+  font-family: var(--font-primary);
+  @include mobile {
+    padding: 40px 20px;
+  }
+  h1 {
+    color: #344054;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* 116.667% */
+    letter-spacing: -2.5px;
+    margin-bottom: 20px;
+    text-align: center;
+    @include mobile {
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -1.5px;
+      text-align: left;
+    }
+  }
+  h4 {
+    color: #344054;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    text-align: center;
+    margin-bottom: 40px;
+    @include mobile {
+      font-size: 12px;
+      line-height: 16px;
+      text-align: left;
+    }
+  }
+}
+.content {
+  max-width: 660px;
+  margin: 0 auto;
+}
+.cardContent {
+  h2 {
+    color: #08415c;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; /* 112.5% */
+    letter-spacing: -0.96px;
+    margin-bottom: 40px;
+    @include mobile {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.72px;
+      margin-bottom: 20px;
+    }
+  }
+  p {
+    color: #667085;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    @include mobile {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  h5 {
+    color: #344054;
+    margin-top: 20px;
+  }
+  ul {
+    padding-left: 15px;
+    li {
+      color: #667085;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px; /* 142.857% */
+      @include mobile {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+}

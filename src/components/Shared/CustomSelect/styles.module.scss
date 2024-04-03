@@ -1,0 +1,36 @@
+// Create a .module.scss file and define your styles like this:
+
+.selectWrapper {
+  position: relative;
+  height: 38px;
+  width: 100%;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    height: 100%;
+    width: 3px;
+    background: var(--Secondary, #a3ccff);
+    border-radius: 4px 0 0 4px;
+    z-index: 1;
+  }
+}
+
+.labelStyles {
+  position: absolute;
+  top: 52%;
+  left: 14px;
+  color: rgba(21, 28, 66, 0.5);
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: top 0.3s, font-size 0.3s;
+  transform: translateY(-50%);
+
+  &.floatingLabelStyles {
+    top: 12px;
+    font-size: 8px;
+  }
+}

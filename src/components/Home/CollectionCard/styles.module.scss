@@ -1,0 +1,71 @@
+@import "../../../styles/mixins";
+.slideItem {
+  display: flex;
+  flex-direction: column;
+  .card {
+    flex-grow: 1;
+    position: relative;
+    .title {
+      position: absolute;
+      top: 0;
+      color: #08415c;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 24px; /* 120% */
+      padding: 20px;
+      text-transform: capitalize;
+      @include mobile {
+        font-size: 12px;
+        line-height: 20px; /* 125% */
+        padding: 10px;
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      min-height: 300px;
+      object-fit: cover;
+      @include mobile {
+        margin-bottom: 10px;
+        min-height: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+    }
+    .caption {
+      display: flex;
+      gap: 6px;
+      align-items: center;
+
+
+      font-family: var(--font-primary);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 18px; /* 128.571% */
+      letter-spacing: -0.42px;
+
+      @include mobile {
+        font-size: 12px;
+        line-height: 16px;
+      }
+      .text {
+        color: #08415c;
+        text-decoration-line: underline;
+      }
+      span {
+        color: #667085;
+        text-decoration: none;
+      }
+      .mobile{
+        display: inline-block;
+        @include mobile {
+          display: none
+        }
+      }
+    }
+  }
+}

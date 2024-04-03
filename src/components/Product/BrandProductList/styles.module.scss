@@ -1,0 +1,79 @@
+@import "../../../styles/mixins";
+.wrapper {
+  margin-top: 80px;
+  @include mobile {
+    margin-bottom: 40px;
+  }
+  h3 {
+    color: #08415c;
+    font-family: var(--font-primary);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; /* 112.5% */
+    letter-spacing: -0.96px;
+    margin-bottom: 20px;
+    span {
+      color: #54457F;
+    }
+    @include mobile {
+      font-size: 20px;
+      margin-bottom: 20px;
+      padding: 0 20px;
+    }
+  }
+  p {
+    color: #667085;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    @include mobile {
+      padding: 0 20px;
+    }
+  }
+  .tags {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 40px;
+    @include mobile {
+      padding: 0 20px;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .ctaTag {
+      border-radius: 4px;
+      border: 1px solid #d0d5dd;
+      padding: 10px;
+      color: #98a2b3;
+      font-family: var(--font-primary);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 18px; /* 128.571% */
+      letter-spacing: -0.42px;
+      text-transform: uppercase;
+      white-space: nowrap;
+      &.active {
+        background: #08415c;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
+.sliderContainer {
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  row-gap: 40px;
+  @include mobile {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 20px;
+  }
+}

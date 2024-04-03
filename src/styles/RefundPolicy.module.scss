@@ -1,0 +1,116 @@
+@import "../styles/mixins.scss";
+.wrapper {
+  background: #f9fafb;
+  padding: 90px 0;
+  font-family: var(--font-primary);
+  @include mobile{
+    padding: 40px 20px;
+  }
+  h1 {
+    color: #344054;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* 116.667% */
+    letter-spacing: -2.5px;
+    text-align: center;
+    margin-bottom: 40px;
+    @include mobile{
+      font-size: 32px;
+      line-height: 40px;
+      letter-spacing: -1.5px;
+    }
+  }
+  p {
+    color: #344054;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px; /* 128.571% */
+    @include mobile{
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+  a {
+    color: #54457F;
+  }
+}
+.heroImage {
+  display: block;
+  width: 414px;
+  height: 320px;
+  margin: 0 auto 40px;
+  @include mobile{
+    width: 100%;
+    height: auto;
+    margin: 0 0 20px 0;
+  }
+}
+.gridList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 80px;
+  gap: 40px;
+  @include mobile{
+    grid-template-columns: 1fr;
+    margin-top: 20px;
+    gap: 20px;
+  }
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow:
+      0px 0px 0px 0px rgba(0, 0, 0, 0.02),
+      0px 1px 3px 0px rgba(0, 0, 0, 0.02),
+      0px 6px 6px 0px rgba(0, 0, 0, 0.02),
+      0px 13px 8px 0px rgba(0, 0, 0, 0.01),
+      0px 24px 9px 0px rgba(0, 0, 0, 0),
+      0px 37px 10px 0px rgba(0, 0, 0, 0);
+    padding: 40px;
+    @include mobile{
+      padding: 20px;
+      gap: 20px;
+
+    }
+
+    h2 {
+      color: #08415c;
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 36px; /* 112.5% */
+      letter-spacing: -0.96px;
+      @include mobile{
+        font-size: 20px;
+        line-height: normal;
+        letter-spacing: normal;
+      }
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      padding-left: 15px;
+
+      li {
+        color: #667085;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+        @include mobile{
+          font-size: 12px;
+          line-height: 16px;
+        }
+
+        strong {
+          color: #344054;
+        }
+      }
+    }
+  }
+}

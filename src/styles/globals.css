@@ -1,0 +1,23 @@
+:root {
+  --max-width: 1360px;
+  --border-radius: 12px;
+  --font-primary: "__Inter_aaf875";
+  --font-secondary: "__Lora_11742b";
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: var(--font-secondary);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

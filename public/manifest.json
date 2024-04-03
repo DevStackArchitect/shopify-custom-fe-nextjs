@@ -1,0 +1,31 @@
+{
+  "theme_color": "#ff5757",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "purpose": "any",
+      "sizes": "144x144",
+      "src": "logo.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "maskable",
+      "sizes": "512x512",
+      "src": "icon512_maskable.png",
+      "type": "image/png"
+    },
+    {
+      "purpose": "any",
+      "sizes": "512x512",
+      "src": "icon512_rounded.png",
+      "type": "image/png"
+    }
+  ],
+  "orientation": "any",
+  "display": "standalone",
+  "dir": "auto",
+  "lang": "en-GB",
+  "name": "ShopifyNexjs",
+  "short_name": "ShopifyNexjs",
+  "start_url": "/"
+}

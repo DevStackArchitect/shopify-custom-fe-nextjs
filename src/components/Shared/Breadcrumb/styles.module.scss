@@ -1,0 +1,17 @@
+@import "../../../styles/mixins.scss";
+.wrapper {
+  padding-top: 20px;
+  color: #667085;
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px; /* 133.333% */
+  display: flex;
+  gap: 10px;
+}
+.divider {
+  width: 1px;
+  height: 16px;
+  background: #d0d5dd;
+}

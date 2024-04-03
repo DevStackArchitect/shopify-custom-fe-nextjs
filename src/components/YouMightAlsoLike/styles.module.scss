@@ -1,0 +1,30 @@
+@import "../../styles/mixins.scss";
+
+.wrapper {
+  margin-top: 80px;
+  margin-bottom: 80px;
+  @include mobile {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 0 20px;
+  }
+  h5 {
+    color: #08415c;
+    font-family: var(--font-primary);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px; /* 112.5% */
+    letter-spacing: -0.96px;
+    margin-bottom: 24px;
+  }
+}
+.list {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: repeat(4, 1fr);
+  @include mobile {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

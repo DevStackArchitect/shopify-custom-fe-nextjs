@@ -1,0 +1,75 @@
+@import "../../styles/mixins.scss";
+.wrapper {
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+  box-shadow:
+    0px -1px 3px 0px rgba(0, 0, 0, 0.08),
+    0px -6px 6px 0px rgba(0, 0, 0, 0.02),
+    0px -13px 8px 0px rgba(0, 0, 0, 0.01);
+  display: none;
+  z-index: 30;
+  @include mobile {
+    display: block;
+  }
+  &.blockLine{
+    display: block;
+    position: relative;
+  }
+}
+.container {
+  border-radius: 8px;
+  background: #54457F;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.view {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 16px; /* 114.286% */
+  cursor: pointer;
+}
+.itemsContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.items {
+  color: #fff;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  .divider {
+    width: 1px;
+    height: 10px;
+    background: #e37878;
+  }
+}
+.saved {
+  color: #fff;
+  font-family: var(--font-primary);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+  border-radius: 4px;
+  background: #a02222;
+  padding: 2px 4px;
+}

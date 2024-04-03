@@ -1,0 +1,68 @@
+# See https://help.github.com/articles/ignoring-files for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+/.next
+/out
+
+# misc
+.DS_Store
+*.pem
+
+# debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# local env files
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# vercel
+.vercel
+
+# next.js
+.next/cache
+
+# MacOS
+.DS_Store
+
+# IDE - VSCode
+.vscode/*
+
+
+.idea
+
+# temporary files
+*.tmp
+*.swp
+*.swo
+
+# Optional: If you have a public directory, you might want to ignore specific files
+# /public/some-directory/
+
+# Optional: If you are using Docker, you might want to ignore some files
+# Dockerfile
+# docker-compose.yml
+# /docker
+
+# Optional: If you are using a database or any local storage, you might want to ignore the storage files.
+# /storage/*.sqlite
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
